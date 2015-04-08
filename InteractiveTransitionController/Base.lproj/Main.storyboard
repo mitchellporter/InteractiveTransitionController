@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="InteractiveTransitions" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Je-uS-ehF" customClass="NavigationDirectionArrow" customModule="InteractiveTransitions" customModuleProvider="target">
+                                <rect key="frame" x="586" y="288" width="8" height="24"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="304-dE-9XW"/>
+                                    <constraint firstAttribute="width" constant="8" id="x1g-id-gwF"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="pointRight" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TLf-nf-DHC" customClass="Panel" customModule="InteractiveTransitions" customModuleProvider="target">
+                                <rect key="frame" x="20" y="40" width="560" height="540"/>
+                                <color key="backgroundColor" red="0.80268061875689445" green="0.92729644307510029" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.098039217293262482" green="0.098039217293262482" blue="0.39100796729326248" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="TLf-nf-DHC" secondAttribute="trailing" constant="20" id="2g3-t8-3CH"/>
+                            <constraint firstItem="TLf-nf-DHC" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="De7-ae-JWk"/>
+                            <constraint firstAttribute="centerY" secondItem="6Je-uS-ehF" secondAttribute="centerY" id="LrG-Xy-BmD"/>
+                            <constraint firstAttribute="trailing" secondItem="6Je-uS-ehF" secondAttribute="trailing" constant="6" id="PJU-T2-IgS"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="TLf-nf-DHC" secondAttribute="bottom" constant="20" id="RmG-px-Dyh"/>
+                            <constraint firstItem="TLf-nf-DHC" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="g0p-lg-e9W"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="3Ca-Sb-6Nr" kind="show" identifier="CardToZoom" id="xuY-id-p1z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="309" y="332"/>
+        </scene>
+        <!--View Controller3-->
+        <scene sceneID="11a-nH-S83">
+            <objects>
+                <viewController id="h5w-6P-gLK" customClass="ViewController3" customModule="InteractiveTransitions" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wWk-Xi-r9R"/>
+                        <viewControllerLayoutGuide type="bottom" id="aSw-kz-zdX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="r18-MJ-8EC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BgS-cr-ppg" customClass="Panel" customModule="InteractiveTransitions" customModuleProvider="target">
+                                <rect key="frame" x="20" y="40" width="560" height="540"/>
+                                <color key="backgroundColor" red="0.89594040023552324" green="1" blue="0.75721661455129419" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dCD-vZ-RgM" customClass="NavigationDirectionArrow" customModule="InteractiveTransitions" customModuleProvider="target">
+                                <rect key="frame" x="6" y="288" width="8" height="24"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="8" id="6GJ-zD-VxC"/>
+                                    <constraint firstAttribute="height" constant="24" id="tdA-In-6oN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96862745100000003" green="0.57254901960000004" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aSw-kz-zdX" firstAttribute="top" secondItem="BgS-cr-ppg" secondAttribute="bottom" constant="20" id="45T-6N-hzb"/>
+                            <constraint firstAttribute="centerY" secondItem="dCD-vZ-RgM" secondAttribute="centerY" id="Qbr-SX-6Sx"/>
+                            <constraint firstItem="dCD-vZ-RgM" firstAttribute="leading" secondItem="r18-MJ-8EC" secondAttribute="leading" constant="6" id="UN9-iH-7CC"/>
+                            <constraint firstAttribute="trailing" secondItem="BgS-cr-ppg" secondAttribute="trailing" constant="20" id="gEM-Cx-SPh"/>
+                            <constraint firstItem="BgS-cr-ppg" firstAttribute="top" secondItem="wWk-Xi-r9R" secondAttribute="bottom" constant="20" id="ofF-UM-X5G"/>
+                            <constraint firstItem="BgS-cr-ppg" firstAttribute="leading" secondItem="r18-MJ-8EC" secondAttribute="leading" constant="20" id="ve1-Pc-uOJ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ceE-BH-Xap" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1743" y="332"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="yeM-Jz-F2N">
+            <objects>
+                <viewController id="3Ca-Sb-6Nr" customClass="ViewController2" customModule="InteractiveTransitions" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Q1z-fl-28Q"/>
+                        <viewControllerLayoutGuide type="bottom" id="GTv-ES-cYW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Wi7-Ds-Jw5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oor-Fa-VdX" customClass="Panel" customModule="InteractiveTransitions" customModuleProvider="target">
+                                <rect key="frame" x="20" y="40" width="560" height="540"/>
+                                <color key="backgroundColor" red="0.95064983513798407" green="1" blue="0.74332496290483085" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.50328794272259025" green="0.16978833245570796" blue="0.12413650434407895" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d3g-11-7Zd" customClass="NavigationDirectionArrow" customModule="InteractiveTransitions" customModuleProvider="target">
+                                <rect key="frame" x="586" y="288" width="8" height="24"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="C4z-36-Dln"/>
+                                    <constraint firstAttribute="width" constant="8" id="nTi-Ik-ddw"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="pointRight" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2ov-Qn-59W" customClass="NavigationDirectionArrow" customModule="InteractiveTransitions" customModuleProvider="target">
+                                <rect key="frame" x="6" y="288" width="8" height="24"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="B89-ro-Erm"/>
+                                    <constraint firstAttribute="width" constant="8" id="t4L-9Q-VXD"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.38889800750015224" green="0.57875631313131315" blue="0.42214302381979368" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="oor-Fa-VdX" secondAttribute="trailing" constant="20" id="4WU-yU-OYK"/>
+                            <constraint firstAttribute="centerY" secondItem="d3g-11-7Zd" secondAttribute="centerY" id="4nf-Fv-mLi"/>
+                            <constraint firstItem="GTv-ES-cYW" firstAttribute="top" secondItem="oor-Fa-VdX" secondAttribute="bottom" constant="20" id="7MS-XG-p15"/>
+                            <constraint firstItem="2ov-Qn-59W" firstAttribute="leading" secondItem="Wi7-Ds-Jw5" secondAttribute="leading" constant="6" id="LeS-Vo-fVz"/>
+                            <constraint firstAttribute="centerY" secondItem="2ov-Qn-59W" secondAttribute="centerY" id="QP0-SX-zmB"/>
+                            <constraint firstItem="oor-Fa-VdX" firstAttribute="top" secondItem="Q1z-fl-28Q" secondAttribute="bottom" constant="20" id="Xzq-8G-xtA"/>
+                            <constraint firstAttribute="trailing" secondItem="d3g-11-7Zd" secondAttribute="trailing" constant="6" id="mra-8f-xSD"/>
+                            <constraint firstItem="oor-Fa-VdX" firstAttribute="leading" secondItem="Wi7-Ds-Jw5" secondAttribute="leading" constant="20" id="rHF-Ti-1HM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="h5w-6P-gLK" kind="show" identifier="Zoom" id="Yd1-b1-DjH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DeE-ex-hcz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1037" y="332"/>
+        </scene>
+    </scenes>
+</document>
