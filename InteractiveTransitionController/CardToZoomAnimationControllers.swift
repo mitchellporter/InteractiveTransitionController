@@ -11,7 +11,7 @@ import UIKit
 class CardToZoomAnimationController: NSObject, UIViewControllerAnimatedTransitioning {
   
   var duration: NSTimeInterval = 0.35
-  var containerBackgroundColor: UIColor = UIColor.grayColor()
+  var containerBackgroundColor: UIColor = UIColor.darkGrayColor()
   var minScale: CGFloat = 0.6
   
   private let unwind: Bool
